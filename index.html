@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+    <script src="js/app.js"></script>
+    <title>Restaurant Meals</title>
+</head>
+
+<body>
+    <h1>Meals to try in Glasgow</h1>
+    <form id="form">
+        <div class="form-item">
+            <label for="dish" class="primary">Dish</label>
+            <input type="text" id="dish" required/>
+        </div>
+
+        <div class="form-item">
+            <label for="restaurant" class="primary">Restaurant</label>
+            <input type="text" id="restaurant" required/>
+        </div>
+
+        <div class="form-item">
+            <label for="cuisine" class="primary">Cuisine</label>
+            <select id="cuisine">
+              <option value="" disabled selected></option>
+              <option value="Italian">Italian</option>
+              <option value="Indian">Indian</option>
+              <option value="Mexican">Mexican</option>
+            </select>
+        </div>
+        <input type="submit" value="Submit" />
+    </form>
+    <div id="meal-wrapper">
+        <ul id="meal-list"></ul>
+        <button id="delete">Delete All</button>
+    </div>
+</body>
+
+</html>
